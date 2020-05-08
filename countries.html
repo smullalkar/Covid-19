@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'PT Sans Caption', sans-serif;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-dark rounded">
+        <a class="navbar-brand text-light" href="covid-19.html">
+            <img src="data:image/png;base64,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"
+                width="30" height="30" class="d-inline-block align-top rounded" alt="">
+            CORONSVIRUS COVID-19
+        </a>
+        <form class="form-inline" id="form">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search by country name" aria-label="Search"
+                id='inp'>
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <h3 class="text-center p-2">Select status from below options to see respective results</h3>
+
+    <div class="row text-center offset-lg-4 offset-md-4 offset-sm-4 offset-4 text-center">
+        <div class="input-group m-3 col-5">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Options</label>
+            </div>
+            <!-- choose by status -->
+            <select class="custom-select" id="selectStatus">
+                <option value="chooseOption" selected>Choose Status..</option>
+                <option value="confirmed">Confirmed</option>
+                <option value="deaths">Deaths</option>
+                <option value="recovered">Recovered</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- DATA -->
+    <div class="container table-responsive mt-5">
+        <h1 class="display1 text-center" id="h1"></h1>
+        <h5 class="display3 text-center">Complete information according to country and status from the day of first case
+            to till now</h5>
+        <table class="table table-bordered table-hover mt-4 text-center">
+            <thead class="table-dark">
+                <tr>
+                    <!-- data headings -->
+                    <th>Date</th>
+                    <th>Cases</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="countryTable">
+                <!-- data taken from api to be appended here -->
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <div class="text-center p-5 m-4">
+        <a href="covid-19.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Go Back</a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        //getting the data from loacl storage to extract the data from api
+        var country = JSON.parse(localStorage.getItem("Countries"))
+
+        //resetting the data everytime users gives input
+        var countryName = country[1].Country
+
+        function loadCountryData(data) {
+            //this function appends the data got from api to the table in countries.html
+            for (var i = 1; i < data.length; i++) {
+                $('#countryTable').append(`<tr><td>${data[i].Date}</td><td>${data[i].Cases}</td><td>${data[i].Status}</td></tr>`)
+            }
+            //appending country name as the heading
+            $('#h1').html(countryName)
+        }
+        window.addEventListener('load', loadCountryData(country))
+
+        //updates the data as per status option chosen
+        selectStatus = document.getElementById('selectStatus')
+        searchByStatus = (e) => {
+            if (e.target.value !== "chooseOption") {
+                $('#countryTable').html("")
+                return fetch('https://api.covid19api.com/country/' + countryName + '/status/' + e.target.value)
+                    .then(res => res.json())
+                    .then(res => {
+                        loadCountryData(res)
+                    })
+            }
+        }
+        selectStatus.addEventListener('click', searchByStatus)
+
+    </script>
+    <script type="text/javascript" src="covid-19.js"></script>
+</body>
+
+</html>

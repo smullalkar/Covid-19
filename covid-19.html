@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'PT Sans Caption', sans-serif;">
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar navbar-light bg-dark row rounded">
+            <div class="col-lg-2 mr-5 col-md-6 m-2 col-sm-12 col-12">
+                <a class="navbar-brand text-light" href="covid-19.html">
+                    <img src="data:image/png;base64,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"
+                        width="30" height="30" class="d-inline-block align-top rounded">
+                    COVID-19
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 m-2 col-sm-12 col-12">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button class="btn btn-outline-danger" id="countries">List of countries in the world</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Button trigger modal -->
+            <div class="col-lg-2 col-md-6 m-2 col-sm-12 col-12">
+                <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalScrollable">
+                    Know about Corona
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="mr-2 float-left">
+                <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-primary" id="exampleModalScrollableTitle">Things to know about Corona Virus</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h2>Know How it Spreads</h2>
+                            <ul>
+                                <li>There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19).</li>  
+                                <li>The best way to prevent illness is to avoid being exposed to this virus.</li>
+                                <li>The virus is thought to spread mainly from person-to-person. 
+                                    <ul>
+                                        <li>Between people who are in close contact with one another (within about 6 feet).</li>
+                                        <li>Through respiratory droplets produced when an infected person coughs or sneezes.</li>
+                                    </ul>
+                                </li>
+                                <li>These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.</li>                           
+                            </ul>
+                            <hr>
+                            <h2>Take steps to protect yourself</h2>
+                            <ul>
+                                <li>Clean your hands often
+                                    <ul>
+                                        <li><strong>Wash your hands</strong> often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</li>
+                                        <li>If soap and water are not readily available, <strong>use a hand sanitizer that contains at least 60% alcohol.</strong> Cover all surfaces of your hands and rub them together until they feel dry.</li>
+                                        <li><strong>Avoid touching your eyes, nose, and mouth</strong> with unwashed hands.</li>
+                                    </ul>
+                                </li>  
+                                
+                                <li>Avoid close contact 
+                                    <ul>
+                                        <li>Avoid close contact with people who are sick</li>
+                                        <li>Put distance between yourself and other people if COVID-19 is spreading in your community. This is especially important for people who are at higher risk of getting very sick.</li>
+                                    </ul>
+                                </li>                          
+                            </ul>
+                            <hr>
+                            <h2>Take steps to protect others</h2>
+                            <ul>
+                                <li>Stay home if you’re sick
+                                    <ul>
+                                        <li><strong>Stay home</strong> if you are sick, except to get medical care. Learn what to do if you are sick.</li>
+                                    </ul>
+                                </li>  
+                                
+                                <li>Cover coughs and sneezes
+                                    <ul>
+                                        <li>Cover your mouth and nose with a tissue when you cough or sneeze or use the inside of your elbow</li>
+                                        <li>Throw used tissues in the trash.</li>
+                                        <li>Immediately wash your hands with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.</li>
+                                    </ul>
+                                </li>  
+                                <li>Cover coughs and sneezes</li> 
+                                <li>Clean and disinfect</li>                        
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 m-2 col-sm-12 col-12">
+                <form class="form-inline row" id="form">
+                    <input class="form-control col-6 m-2" type="search" placeholder="Search by country name"
+                        aria-label="Search" id='inp'>
+                    <button class="btn m-2 col-4 btn-outline-danger" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- Total cases in the world -->
+        <div class="container text-center" style="background-image: url(https://i0.wp.com/indusdictum.com/wp-content/uploads/2018/01/antibiotic-resistance-virus.jpg?fit=1920%2C1080&ssl=1); background-size: cover;">
+            <div class="row text-center m-5">
+                <!-- Total cases in the world -->
+                <div class=" col-lg-4 col-md-6 col-sm-12 card text-white bg-warning mb-3 p-5 m-4 shadow-lg" style="max-width: 18rem;">
+                    <div class="card-header">Total Active Cases in the world</div>
+                    <div class="card-body">
+                        <h3 class="card-title" id="cardTitleCases"></h3>
+                    </div>
+                </div>
+                <!-- Total deaths in the world -->
+                <div class="col-lg-4 col-md-6 col-sm-12 card text-white bg-danger mb-3 p-5 m-4 shadow-lg" style="max-width: 18rem;">
+                    <div class="card-header">Total Deaths in the world</div>
+                    <div class="card-body">
+                        <h3 class="card-title" id="cardTitleDeaths"></h3>
+                    </div>
+                </div>
+                <!-- Total recoveries in the world -->
+                <div class="col-lg-4 col-md-6 col-sm-12 card text-white bg-success mb-3 p-5 m-4 shadow-lg" style="max-width: 18rem;">
+                    <div class="card-header">Total Recoveries in the world</div>
+                    <div class="card-body">
+                        <h3 class="card-title" id="cardTitleRecovered"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- countries in the world -->
+        <div class="container">
+            <table class="table table-borderless" id="countryData">
+
+            </table>
+        </div>
+
+        <!-- Live Counts -->
+        <div class="text-center p-5 mt-3 col-8 offset-2">
+            <div class="input-group">
+                <select class="custom-select" id="liveCount" aria-label="Example select with button addon">
+                    <option value="selected" selected>Select a country to see Live or current number of cases according to country
+                    </option>
+
+                </select>
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="liveBtn">Submit</button>
+                </div>
+            </div>
+            <small class="form-text text-muted">Returns all live cases by case type for a country. These records are
+                pulled every 10 minutes and are ungrouped</small>
+            <h1 class="display1 text-center p-5 text-danger" id="liveCountCountry"></h1>
+        </div>
+
+        <!-- data -->
+        <div class="container table-responsive mt-1">
+            <h1 class="display1 text-center">WORLD SUMMARY COVID-19</h1>
+            <table class="table table-bordered table-hover mt-4" id="table">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <!-- data headings -->
+                        <th>Country</th>
+                        <th>New Confirmed</th>
+                        <th>New Deaths</th>
+                        <th>New Recovered</th>
+                        <th>Total Confirmed</th>
+                        <th>Total Deaths</th>
+                        <th>Total Recovered</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- data taken from api to be appended here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="text-center p-5">
+            <nav aria-label="...">
+                <ul class="pagination justify-content-center" id="pages">
+
+                </ul>
+            </nav>
+
+            <!-- number of results perpage -->
+            <select name="perpage" id="pageSelect" class="bg-primary rounded text-center mb-5">
+                <option value="25" selected>25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="text-danger blockquote-footer ml-4 mb-3">All rights reserved<cite title="Source Title">@Shabaz
+            Mullalkar</cite></footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="covid-19.js"></script>
+</body>
+
+</html>
