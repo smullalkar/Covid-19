@@ -169,8 +169,8 @@ function live(e) {
                     $('#liveCountCountry').html(`No cases till date`)
                 }
                 else {
-                    console.log(res[res.length - 1].Cases)
-                    $('#liveCountCountry').html(`Total number of Cases in ${e.target.value} till now are ${res[res.length - 1].Cases}`)
+                    console.log(res[res.length - 1].Confirmed)
+                    $('#liveCountCountry').html(`Total number of Cases in ${e.target.value} till now are ${res[res.length - 1].Confirmed}`)
                 }
             })
     }
