@@ -23,7 +23,7 @@ To get started and know better here is the list of the features build inside thi
 
 ### Client
 
-1.   Clone the payment management system repo to your home directory and run below commands one by one.
+1.   Clone the repo to your home directory and run below commands one by one.
 
 2.   click on index.html file to start the app
 
