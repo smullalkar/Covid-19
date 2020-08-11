@@ -4,7 +4,7 @@ This project was created  with  HTML,CSS Javascript and JQuery using api 'https:
 Covid-19 app show the number of cases till date, live cases and status of the cases(death and recover) based on the country.
 <br>
 <br>
-<a href =  "https://covid.smullalkar.tech/">
+<a href =  "https://covidproject.smullalkar.tech/">
   <button style = "background:red,padding:5px">Demo Link</button>
 </a>
 
